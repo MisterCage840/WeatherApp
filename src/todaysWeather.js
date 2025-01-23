@@ -79,7 +79,7 @@ function getTodaysWeather(weatherArray) {
   iconContainer.appendChild(icon);
   iconContainer.classList.add("iconContainer");
 
-  const tempText = document.createTextNode("Temp: " + todaysTemp + "F");
+  const tempText = document.createTextNode("Temp: " + todaysTemp);
   temp.appendChild(tempText);
   tempContainer.appendChild(temp);
   tempContainer.classList.add("todaysWeatherInfo");
@@ -92,7 +92,7 @@ function getTodaysWeather(weatherArray) {
   humidityContainer.classList.add("todaysWeatherInfo");
 
   const feelsLikeText = document.createTextNode(
-    "Feels Like: " + todaysFeelsLike + "F",
+    "Feels Like: " + todaysFeelsLike,
   );
   feelsLike.appendChild(feelsLikeText);
   feelsLikeContainer.appendChild(feelsLike);
@@ -100,7 +100,7 @@ function getTodaysWeather(weatherArray) {
   feelsLikeContainer.classList.add("rightPartTodaysWeather");
 
   const windSpeedText = document.createTextNode(
-    "Wind Speed: " + todaysWindspeed + "m/h",
+    "Wind Speed: " + todaysWindspeed,
   );
   windSpeed.appendChild(windSpeedText);
   windSpeedContainer.appendChild(windSpeed);
@@ -115,17 +115,13 @@ function getTodaysWeather(weatherArray) {
   windDirectionContainer.classList.add("todaysWeatherInfo");
   windDirectionContainer.classList.add("rightPartTodaysWeather");
 
-  const maxTempText = document.createTextNode(
-    "Max Temp: " + todaysMaxTemp + "F",
-  );
+  const maxTempText = document.createTextNode("Max Temp: " + todaysMaxTemp);
   maxTemp.appendChild(maxTempText);
   maxTempContainer.appendChild(maxTemp);
   maxTempContainer.classList.add("todaysWeatherInfo");
   maxTempContainer.classList.add("maxTempContainer");
 
-  const minTempText = document.createTextNode(
-    "Min Temp: " + todaysMinTemp + "F",
-  );
+  const minTempText = document.createTextNode("Min Temp: " + todaysMinTemp);
   minTemp.appendChild(minTempText);
   minTempContainer.appendChild(minTemp);
   minTempContainer.classList.add("todaysWeatherInfo");
