@@ -3,7 +3,7 @@ import { getWeatherData } from "./fetchWeather.js";
 import { getTodaysWeather } from "./todaysWeather.js";
 import { getForecastWeather } from "./forecastWeather.js";
 
-import anime from "animejs/lib/anime.es.js";
+// import anime from "animejs/lib/anime.es.js";
 
 const locationInput = document.getElementById("location");
 const submitBtn = document.querySelector("button");

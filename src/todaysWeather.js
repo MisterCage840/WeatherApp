@@ -4,6 +4,8 @@ import snowy from "./snowy.png";
 import windy from "./windy.png";
 import partlycloudy from "./partlycloudy.png";
 import sunny from "./sunny.png";
+import up from "./up.png";
+import down from "./down.png";
 
 function getWindDirection(winddir) {
   if (winddir == 0) return "North";
